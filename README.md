@@ -31,19 +31,19 @@ Todos os recursos foram criados manualmente com o objetivo de consolidar os fund
 ### Criação da VPC
 Foi criada uma VPC customizada utilizando o bloco CIDR `10.0.0.0/16`, servindo como base para toda a infraestrutura de rede.
 
-![Criação da VPC](screenshots/vpc-create.png)
-![Detalhes da VPC](screenshots/vpc-details.png)
+![Criação da VPC](screenshots/vpc-create.png.png)
+![Detalhes da VPC](screenshots/vpc-details.png.png)
 
 ### Subnets
 Foram criadas duas subnets públicas em diferentes zonas de disponibilidade (AZs), garantindo alta disponibilidade da aplicação.
 
-![Subnets](screenshots/subnets.png)
+![Subnets](screenshots/subnets.png.png)
 
 ### Internet Gateway e Roteamento
 Um Internet Gateway foi associado à VPC e uma tabela de rotas foi configurada com a rota `0.0.0.0/0`, permitindo acesso à internet para os recursos públicos.
 
-![Internet Gateway](screenshots/internet-gateway.png)
-![Tabela de Rotas](screenshots/route-table.png)
+![Internet Gateway](screenshots/internet-gateway.png.png)
+![Tabela de Rotas](screenshots/route-table.png.png)
 
 ---
 
@@ -52,7 +52,7 @@ Foi criado um Security Group com as seguintes regras:
 - Acesso HTTP (porta 80) liberado para qualquer origem
 - Acesso SSH (porta 22) restrito a um IP específico, aumentando a segurança administrativa
 
-![Security Group](screenshots/security-group.png)
+![Security Group](screenshots/security-group.png.png)
 
 ---
 
@@ -63,23 +63,23 @@ Foi provisionada uma instância Amazon EC2 utilizando:
 
 Essa instância representa a aplicação web a ser acessada pelos usuários.
 
-![Criação da EC2](screenshots/ec2-launch.png)
-![Instância em execução](screenshots/ec2-running.png)
+![Criação da EC2](screenshots/ec2-launch.png.png)
+![Instância em execução](screenshots/ec2-running.png.png)
 
 ---
 
 ## ⚖️ Balanceamento de Carga
 Foi configurado um Application Load Balancer (internet-facing) para distribuir o tráfego HTTP de forma automática entre as instâncias registradas.
 
-![Lista de Load Balancers](screenshots/load-balancer-list.png)
-![Detalhes do Load Balancer](screenshots/load-balancer-details.png)
+![Lista de Load Balancers](screenshots/load-balancer-list.png.png)
+![Detalhes do Load Balancer](screenshots/load-balancer-details.png.png)
 
 ---
 
 ## 🎯 Grupo de Destino (Target Group)
 A instância EC2 foi registrada em um Target Group, com verificações de integridade (health checks) configuradas para garantir a disponibilidade da aplicação.
 
-![Target Group](screenshots/target-group.png)
+![Target Group](screenshots/target-group.png.png)
 
 ---
 
@@ -91,16 +91,16 @@ Foi configurado um Auto Scaling Group com as seguintes características:
 
 Essa configuração permite que a aplicação escale automaticamente conforme a demanda.
 
-![Auto Scaling Group](screenshots/auto-scaling-group.png)
-![Detalhes do Auto Scaling](screenshots/auto-scaling-details.png)
+![Auto Scaling Group](screenshots/auto-scaling-group.png.png)
+![Detalhes do Auto Scaling](screenshots/auto-scaling-details.png.png)
 
 ---
 
 ## 📊 Monitoramento
 Foi criado um alarme no Amazon CloudWatch para monitorar a utilização de CPU das instâncias EC2, acionando alertas quando o uso ultrapassar 70%.
 
-![Lista de Alarmes](screenshots/cloudwatch-alarm-list.png)
-![Detalhes do Alarme](screenshots/cloudwatch-alarm-details.png)
+![Lista de Alarmes](screenshots/cloudwatch-alarm-list.png.png)
+![Detalhes do Alarme](screenshots/cloudwatch-alarm-details.png.png)
 
 ---
 
