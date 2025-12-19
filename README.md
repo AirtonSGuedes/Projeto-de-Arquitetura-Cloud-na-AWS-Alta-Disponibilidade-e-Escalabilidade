@@ -4,6 +4,12 @@ Projeto prático de arquitetura web escalável na AWS, utilizando VPC customizad
 O foco foi alta disponibilidade, escalabilidade e monitoramento, com todos os recursos criados manualmente via AWS Management Console.
 
 ---
+## 🗺️ Diagrama da Arquitetura
+
+![Diagrama da Arquitetura AWS](screenshots/arquitetura.png)
+
+---
+
 
 ## 📌 Visão Geral
 Este projeto demonstra a construção de uma arquitetura web escalável e altamente disponível na AWS, aplicando boas práticas de rede, segurança, balanceamento de carga, escalabilidade automática e monitoramento.
