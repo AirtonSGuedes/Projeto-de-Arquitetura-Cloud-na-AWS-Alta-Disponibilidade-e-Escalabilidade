@@ -6,7 +6,7 @@ O foco foi alta disponibilidade, escalabilidade e monitoramento, com todos os re
 ---
 ## 🗺️ Diagrama da Arquitetura
 
-![Diagrama da Arquitetura AWS](screenshots/arquitetura.png)
+![Diagrama da Arquitetura AWS](screenshots/estrutura.png)
 
 ---
 
