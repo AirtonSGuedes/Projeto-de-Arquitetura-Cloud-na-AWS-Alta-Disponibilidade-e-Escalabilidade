@@ -30,7 +30,7 @@ Foi criada uma VPC customizada utilizando o bloco CIDR `10.0.0.0/16`.
 
 ![Criação da VPC](screenshots/vpc-create.png)
 ![Detalhes da VPC](screenshots/vpc-details.png)
-
+ 
 ### Subnets
 Foram criadas duas subnets públicas em diferentes zonas de disponibilidade, garantindo alta disponibilidade.
 
